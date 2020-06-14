@@ -413,5 +413,5 @@ span.aws_result_title {
     line-height: 10px;
     align-self: center;
     padding: 0!important;
-    padding-top: 11px;
+    padding-top: 11px!important;
 }
