@@ -406,6 +406,10 @@ span.aws_result_title {
     border-radius: 50px;
 }
 
+.products .sale-product-daily-deal {
+    display: none;
+}
+
 .product-image .labels .onsale, .summary-before .labels .onsale {
     justify-content: center;
     text-align: center;
@@ -413,7 +417,4 @@ span.aws_result_title {
     line-height: 10px;
     align-self: center;
     line-height: 25px;
-}
-.products .sale-product-daily-deal {
-    display: none;
 }
