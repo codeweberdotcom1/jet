@@ -414,3 +414,6 @@ span.aws_result_title {
     align-self: center;
     line-height: 34px;
 }
+.products .sale-product-daily-deal {
+    display: none;
+}
