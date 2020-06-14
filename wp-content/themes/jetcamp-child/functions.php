@@ -59,36 +59,8 @@ function msc_product_loop_end() {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /**WC Отключение оплаты при оформлении**/
 add_filter( 'woocommerce_cart_needs_payment', '__return_false' );
-
-
-
-
-
-
-
-
-
-
 
 
 /**Скрыть превью товаров если оно всего одно**/
@@ -118,8 +90,6 @@ function custom_remove_downloads_my_account( $items ) {
 unset($items['downloads']);
 return $items;
 }
-
-
 
 
 /**
@@ -223,6 +193,7 @@ $translated = str_ireplace('Консоль', 'Личный кабинет', $tra
 $translated = str_ireplace('RELATED PRODUCTS', 'Похожие товары', $translated);
 $translated = str_ireplace('Детали', 'Дополнительная информация', $translated);
 $translated = str_ireplace('Unit price', 'Цена', $translated);
+$translated = str_ireplace('Подытог', 'Итого', $translated);
 return $translated;
 }
 
