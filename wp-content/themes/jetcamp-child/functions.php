@@ -304,8 +304,8 @@ function bbloomer_display_wp_editor_content() {
       }
    }
 }
-add_filter('woocommerce_get_price', 'my_woocommerce_get_price',100,2);
-function my_woocommerce_get_price($price, $_product) {
+add_filter('woocommerce_product_get_price', 'my_woocommerce_product_get_price',100,2);
+function my_woocommerce_product_get_price($price, $_product) {
 // параметры ------------------------------------
 $kurs_cb = get_currency_cb('USD'); // получить курс USD
 // --------------------------------------------------
