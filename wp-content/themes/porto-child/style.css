@@ -390,18 +390,18 @@ span.aws_result_title {
 
 .product-image .labels .onsale, .summary-before .labels .onsale {
     background: #ef0000;
-    border-radius: 50px!important;
-    width: 35px;
-    height: 35px;
 }
 }
 .product-image .labels .onhot, .product-image .labels .onsale {
     padding: 11px 11px;
-    border-radius: 50px!important;
-    width: 35px;
-    height: 35px;
 }
 }
 .product-image .labels {
     font-size: 13px;
+}
+.product-image .labels .onsale, .summary-before .labels .onsale {
+    background: #ef0000;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
 }
