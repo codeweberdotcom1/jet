@@ -387,3 +387,7 @@ span.aws_result_title {
 .shop-loop-after {
     text-align: left;
 }
+
+.product-image .labels .onsale, .summary-before .labels .onsale {
+    background: #ef0000;
+}
