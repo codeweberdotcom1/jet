@@ -304,3 +304,34 @@ function bbloomer_display_wp_editor_content() {
       }
    }
 }
+add_filter('woocommerce_get_price', 'my_woocommerce_get_price',100,2);
+function my_woocommerce_get_price($price, $_product) {
+// параметры ------------------------------------
+$kurs_cb = get_currency_cb('USD'); // получить курс USD
+// --------------------------------------------------
+
+$kurs_current = ($kurs_cb['kurs'] <= 0) ? $kurs_current : $kurs_cb['kurs'];
+$new_price = $price * $kurs_current;
+
+return $new_price; // новая цена
+}
+function get_currency_cb($code_valute = 'USD' ) {
+
+$kurs_cb_xml = simplexml_load_file("http://www.cbr.ru/scripts/XML_daily.asp");
+if ($kurs_cb_xml === false) {
+$kurs_cb = 70;
+return $kurs_cb;
+}
+{
+foreach ($kurs_cb_xml->Valute as $valute) {
+if ((string)$valute->CharCode == $code_valute) {
+$kurs_cb['date'] = (string)$kurs_cb_xml['Date'];
+$kurs_cb['kurs'] = (string)$valute->Value;
+$kurs_cb['code'] = $code_valute;
+break;
+}
+}
+$kurs_cb['kurs'] = round(str_replace(',','.',$kurs_cb['kurs']),2);
+return $kurs_cb;
+}
+}
