@@ -310,3 +310,4 @@ function bbloomer_display_wp_editor_content() {
 
 
 
+add_image_size( 'archive-festival', 444, 444, true );
