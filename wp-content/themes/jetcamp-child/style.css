@@ -440,3 +440,7 @@ span.aws_result_title {
     font-weight: 300!important;
     display: block;
 }
+th.wdtheader.sort.sorting_disabled.column-wdtcolumn2 {
+
+    line-height: 15px;
+}
