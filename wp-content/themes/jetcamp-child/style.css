@@ -425,3 +425,7 @@ span.aws_result_title {
     margin-bottom: 0!important;
 }
 
+.wc-pao-col2 {
+    width: 50%;
+    text-align: right;
+}
