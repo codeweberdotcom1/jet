@@ -452,3 +452,7 @@ th.wdtheader.sort.sorting_disabled.column-wdtcolumn2 {
 }
 .tm-extra-product-options ul.tmcp-elements li.tmcp-field-wrap {
     margin: 0!important;
+}
+.woocommerce-variation-price {
+    display: none;
+}
