@@ -447,3 +447,8 @@ th.wdtheader.sort.sorting_disabled.column-wdtcolumn2 {
 .tm-extra-product-options .tm-epo-field-label {
     font-size: 14px;
 }
+.tm-extra-product-options ul.tmcp-elements li.tmcp-field-wrap {
+    padding: 0!important;
+}
+.tm-extra-product-options ul.tmcp-elements li.tmcp-field-wrap {
+    margin: 0!important;
