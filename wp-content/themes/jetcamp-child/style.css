@@ -456,3 +456,6 @@ th.wdtheader.sort.sorting_disabled.column-wdtcolumn2 {
 .woocommerce-variation-price {
     display: none;
 }
+a.reset_variations {
+    display: none!important;
+}
