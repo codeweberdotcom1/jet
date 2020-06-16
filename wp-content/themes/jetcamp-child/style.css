@@ -442,5 +442,5 @@ span.aws_result_title {
 }
 th.wdtheader.sort.sorting_disabled.column-wdtcolumn2 {
 
-    line-height: 15px;
+    line-height: 15px!important;
 }
