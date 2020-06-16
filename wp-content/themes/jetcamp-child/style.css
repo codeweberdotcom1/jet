@@ -434,3 +434,9 @@ span.aws_result_title {
 
     width: 70%!important;
 }
+
+.wc-pao-col1 strong {
+    line-height: 18px;
+    font-weight: 300!important;
+    display: block;
+}
