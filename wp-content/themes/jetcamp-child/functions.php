@@ -306,14 +306,18 @@ function bbloomer_display_wp_editor_content() {
 }
 
 
- add_filter( 'woocommerce_product_tabs', 'rf_remove_product_tabs', 98 );
+   
+
+    add_filter( 'woocommerce_product_tabs', 'rf_remove_product_tabs', 98 );
 
 function rf_remove_product_tabs( $tabs ) {
 
+
+if is_page( 'hull' ) {
     unset( $tabs['description'] );          // Remove the description tab
     unset( $tabs['reviews'] );          // Remove the reviews tab
     unset( $tabs['additional_information'] );   // Remove the additional information tab
-
+};
     return $tabs;
 
 }
