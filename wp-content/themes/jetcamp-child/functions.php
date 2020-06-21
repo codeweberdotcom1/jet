@@ -304,4 +304,3 @@ function bbloomer_display_wp_editor_content() {
       }
    }
 }
-
