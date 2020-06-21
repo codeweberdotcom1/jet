@@ -305,18 +305,14 @@ function bbloomer_display_wp_editor_content() {
    }
 }
 
-add_filter( 'woocommerce_product_tabs', 'rf_woo_remove_empty_tabs', 20, 1 );
-    function rf_woo_remove_empty_tabs( $tabs ) {
-if is_page( 'hull' ) {
-        if ( ! empty( $tabs ) ) {
-            foreach ( $tabs as $title => $tab ) {
-                if ( empty( $tab['content'] ) ) {
-                    unset( $tabs[ $title ] );
-                }
-            }
-        }
-    }
-        return $tabs;
-    }
 
    
+    //* http://gasolicious.com/remove-tabs-keep-product-description-woocommerce/
+//  Location: add to functions.php
+//  Output: adds full description to below price
+
+function woocommerce_template_product_description() {
+  woocommerce_get_template( 'single-product/tabs/description.php' );
+} if is_page( 'hull' ) {
+add_action( 'woocommerce_single_product_summary', 'woocommerce_template_product_description', 20 );
+}
