@@ -315,4 +315,4 @@ function woocommerce_template_product_description() {
   woocommerce_get_template( 'single-product/tabs/description.php' );
 } if is_page( 'hull' ) {
 add_action( 'woocommerce_single_product_summary', 'woocommerce_template_product_description', 20 );
-}
+};
