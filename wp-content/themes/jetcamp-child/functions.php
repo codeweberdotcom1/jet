@@ -307,7 +307,7 @@ function bbloomer_display_wp_editor_content() {
 
 add_filter( 'woocommerce_product_tabs', 'rf_woo_remove_empty_tabs', 20, 1 );
     function rf_woo_remove_empty_tabs( $tabs ) {
-
+is_page( 'hull' ) {;
         if ( ! empty( $tabs ) ) {
             foreach ( $tabs as $title => $tab ) {
                 if ( empty( $tab['content'] ) ) {
@@ -315,6 +315,6 @@ add_filter( 'woocommerce_product_tabs', 'rf_woo_remove_empty_tabs', 20, 1 );
                 }
             }
         }
+    }
         return $tabs;
     }
-    
