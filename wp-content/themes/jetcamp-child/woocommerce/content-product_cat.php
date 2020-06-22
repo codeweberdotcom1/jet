@@ -182,3 +182,4 @@ if ( $category_icon ) {
 	do_action( 'woocommerce_after_subcategory', $category );
 	?>
 </li>
+
