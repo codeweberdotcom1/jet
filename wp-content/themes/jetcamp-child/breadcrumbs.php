@@ -13,3 +13,13 @@ if ( ( is_front_page() && is_home() ) || is_front_page() ) {
 	$page_title  = false;
 }
 ?>
+<?php
+if ( $breadcrumbs || $page_title ) :
+	if ( $porto_settings['breadcrumbs-parallax'] ) {
+		wp_enqueue_script( 'skrollr' );
+	}
+	?>
+	
+<?php elseif ( is_customize_preview() ) : ?>
+	<section class="page-top d-none"></section>
+<?php endif; ?>
