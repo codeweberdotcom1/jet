@@ -456,5 +456,5 @@ th.wdtheader.sort.sorting_disabled.column-wdtcolumn2 {
     display: none;
 }
 .single-product .product_title {
-    font-size: 2.2rem;
+    font-size: 2.2rem!important;
 }
