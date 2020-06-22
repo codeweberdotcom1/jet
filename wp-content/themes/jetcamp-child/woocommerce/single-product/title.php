@@ -19,3 +19,4 @@ global $porto_settings;
 	</a>
 	<?php endif; ?>
 </h1>
+
