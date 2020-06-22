@@ -16,6 +16,7 @@ if ( $porto_settings['category-ajax'] ) {
 }
 ?>
 
+
 <?php
 	/**
 	 * Hook: woocommerce_before_main_content.
