@@ -455,4 +455,10 @@ th.wdtheader.sort.sorting_disabled.column-wdtcolumn2 {
 .woocommerce-variation-price {
     display: none;
 }
-
+h1.product_title.entry-title {
+    text-align: left;
+    font-weight: 400;
+    font-size: 25px;
+    margin: 0 0 13px;
+    padding: 0;
+}
