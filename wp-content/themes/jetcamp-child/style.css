@@ -465,3 +465,9 @@ h1.product_title.entry-title {
 ul.sub-menu {
     min-width: 280px!important;
 }
+
+.festival_archives_zw h2 {
+    font-size: 28px;
+    text-transform: capitalize;
+    line-height: 32px;
+}
