@@ -94,7 +94,7 @@ ul.contact-details li span {
 }
 
 #footer .widget.contact-info .contact-details strong, #footer .follow-us .widget-title {
-    color: #ff671b;
+    color: #fff;
 }
 
 #footer .contact-info-block .contact-details a {
@@ -113,7 +113,7 @@ a.share-whatsapp {
     font-size: 20px;
 }
 #footer h3 {
-    color: #ff671b!important;
+    color: #fff!important;
 }
 #footer .widget > div > ul, #footer .widget > ul, #footer .widget > div > ul li, #footer .widget > ul li, #footer .post-item-small {
     border: 0!important;
@@ -466,8 +466,3 @@ ul.sub-menu {
     min-width: 280px!important;
 }
 
-.festival_archives_zw h2 {
-    font-size: 28px;
-    text-transform: capitalize;
-    line-height: 32px;
-}
