@@ -94,7 +94,7 @@ ul.contact-details li span {
 }
 
 #footer .widget.contact-info .contact-details strong, #footer .follow-us .widget-title {
-    color: #fff;
+    color: #fff!important;
 }
 
 #footer .contact-info-block .contact-details a {
