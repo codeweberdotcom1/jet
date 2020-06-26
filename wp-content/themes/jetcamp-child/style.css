@@ -477,3 +477,6 @@ ul.sub-menu {
     padding: 8px 0 0;
     color: black;
 }
+aside#follow-us-widget-3 .share-links {
+    display: flex;
+}
