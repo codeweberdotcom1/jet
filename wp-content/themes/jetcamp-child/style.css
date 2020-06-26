@@ -482,6 +482,9 @@ ul.sub-menu {
     text-transform: capitalize;
     font-size: 14px;
 }
-#header .searchform button i:before {
-    font-weight: 600;
+span.woocommerce-Price-amount.amount {
+    font-size: 35px;
+    line-height: 46px;
+    color: #000000;
+    font-weight: 400;
 }
