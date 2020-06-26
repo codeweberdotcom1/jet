@@ -480,3 +480,10 @@ ul.sub-menu {
 #follow-us-widget-3 .share-links {
     display: flex!important;
 }
+#mini-cart .buttons .checkout {
+    text-transform: capitalize;
+    font-size: 14px;
+}
+#header .searchform button i:before {
+    font-weight: 600;
+}
