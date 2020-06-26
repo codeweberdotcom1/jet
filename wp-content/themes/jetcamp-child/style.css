@@ -472,3 +472,7 @@ ul.sub-menu {
     line-height: 30px!important;
     color: #000!important;
 }
+.shop_table dl.variation dt {
+    padding: 8px 0 0;
+    color: black;
+}
