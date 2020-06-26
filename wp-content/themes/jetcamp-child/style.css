@@ -478,5 +478,5 @@ ul.sub-menu {
     color: black;
 }
 aside#follow-us-widget-3 .share-links {
-    display: flex;
+    display: flex!important;
 }
