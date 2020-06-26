@@ -482,9 +482,3 @@ ul.sub-menu {
     text-transform: capitalize;
     font-size: 14px;
 }
-span.woocommerce-Price-amount.amount {
-    font-size: 35px!important;
-    line-height: 46px;
-    color: #000000;
-    font-weight: 400;
-}
