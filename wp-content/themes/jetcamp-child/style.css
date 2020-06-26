@@ -467,3 +467,8 @@ ul.sub-menu {
 .woo-variation-swatches .variable-items-wrapper .variable-item:not(.radio-variable-item).selected {
     box-shadow: 0 0 0 2px #0088cc !important;
 }
+.cart-v2 h1 {
+    font-size: 25px!important;
+    line-height: 30px!important;
+    color: #000!important;
+}
