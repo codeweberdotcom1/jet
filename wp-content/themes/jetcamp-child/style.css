@@ -468,9 +468,10 @@ ul.sub-menu {
     box-shadow: 0 0 0 2px #0088cc !important;
 }
 .cart-v2 h1 {
-    font-size: 25px!important;
-    line-height: 30px!important;
+    font-size: 36px!important;
+    line-height: 40px!important;
     color: #000!important;
+    font-weight: 400!important;
 }
 .shop_table dl.variation dt {
     padding: 8px 0 0;
