@@ -485,6 +485,6 @@ ul.sub-menu {
 
 @media (max-width: 414px) {
     .porto-flex-column-reverse .container.row {
-        flex-direction: column-reverse;
+        flex-direction: column-reverse!important;
     }
 }
