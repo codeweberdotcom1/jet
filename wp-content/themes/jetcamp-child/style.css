@@ -483,6 +483,6 @@ ul.sub-menu {
     font-size: 14px;
 }
 
-    .porto-flex-column-reverse .container.row {
+    .porto-flex-column-reverse .container .row {
         flex-direction: column-reverse!important;
     }
