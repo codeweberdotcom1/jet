@@ -499,3 +499,9 @@ section.toggle * {
     margin-right: 10px;
     text-transform: capitalize;
 }
+.btn-modern {
+    text-transform: capitalize;
+    font-size: .75rem;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+}
