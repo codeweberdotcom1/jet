@@ -488,6 +488,6 @@ ul.sub-menu {
         flex-direction: column-reverse!important;
     }
 }
-section.toggle {
+section.toggle * {
     font-size: 14px!important;
 }
