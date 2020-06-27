@@ -482,3 +482,9 @@ ul.sub-menu {
     text-transform: capitalize;
     font-size: 14px;
 }
+
+@media (max-width: 414px) {
+    porto-flex-column-reverse {
+        flex-direction: column-reverse;
+    }
+}
