@@ -500,6 +500,6 @@ section.toggle * {
     text-transform: capitalize;
 }
 .btn-modern {
-    text-transform: capitalize;
-    font-weight: 400;
+    text-transform: capitalize!important;
+    font-weight: 400!important;
 }
