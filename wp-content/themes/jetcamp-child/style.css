@@ -484,7 +484,7 @@ ul.sub-menu {
 }
 
 @media (max-width: 414px) {
-    .vc_row.wpb_row.porto-flex-column-reverse.vc_custom_1593244588559.section.section-parallax.mt-0.section-no-borders.vc_row-has-fill.porto-inner-container div div{
+    .porto-flex-column-reverse div div{
         flex-direction: column-reverse!important;
     }
 }
