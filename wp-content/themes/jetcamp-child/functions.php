@@ -311,4 +311,4 @@ add_filter('woocs_raw_woocommerce_price', function($price) {
     {
         $price = ceil($price / 50) * 50;
         return $price;
-    });
+    }});
