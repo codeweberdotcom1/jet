@@ -512,6 +512,7 @@ section.toggle * {
 .club-jc {
     display: flex;
     align-items: center;
+    min-height: 350px;
 }
 .text-jc div ul li {
     line-height: 22px;
