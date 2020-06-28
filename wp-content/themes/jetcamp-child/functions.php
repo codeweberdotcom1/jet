@@ -313,7 +313,7 @@ add_filter('woocs_raw_woocommerce_price', function($price) {
         return $price;
     } else
     {
-        $price = ceil($price / 500) * 500;
+        $price = ceil($price / 50) * 50;
         return $price;
     }
 });
