@@ -307,13 +307,8 @@ function bbloomer_display_wp_editor_content() {
 
 
 add_filter('woocs_raw_woocommerce_price', function($price) {
-    if (($price <= 1000))
-    {
-        $price = round($price / 1000, 0) * 1000;
-        return $price;
-    } else
+    if (($price <= 30))
     {
         $price = ceil($price / 50) * 50;
         return $price;
-    }
-});
+    });
