@@ -503,3 +503,9 @@ section.toggle * {
     text-transform: capitalize!important;
     font-weight: 400!important;
 }
+
+.club-jc .wpb_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
