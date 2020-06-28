@@ -304,3 +304,6 @@ function bbloomer_display_wp_editor_content() {
       }
    }
 }
+add_filter('woocs_raw_woocommerce_price', function($price) {
+    return round($price * 2, 0) / 2;
+});
