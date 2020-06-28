@@ -484,7 +484,7 @@ ul.sub-menu {
 }
 
 @media (max-width: 768px) {
-.vc_row.wpb_row.porto-flex-column-reverse div div{
+.vc_row.wpb_row.porto-flex-column-reverse .porto-wrap-container .row{
         flex-direction: column-reverse!important;
     }
 }
@@ -493,11 +493,7 @@ ul.sub-menu {
         flex-direction: column-reverse!important;
     }
 }
-@media (max-width: 768px) {
-.vc_row.wpb_row.porto-flex-column .wpb_wrapper{
-        flex-direction: column!important;
-    }
-}
+
 section.toggle * {
     font-size: 14px!important;
 }
