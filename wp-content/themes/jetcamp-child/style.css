@@ -513,3 +513,6 @@ section.toggle * {
     display: flex;
     align-items: center;
 }
+.text-jc div ul li {
+    line-height: 22px;
+}
