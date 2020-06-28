@@ -524,3 +524,7 @@ section.toggle * {
     line-height: 22px;
 }
 
+li.porto-info-list-item.text-color-secondary div a {
+    font-size: 20px!important;
+    color: #fff!important;
+}
