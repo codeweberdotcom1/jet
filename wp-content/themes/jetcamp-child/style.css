@@ -532,6 +532,6 @@ li.porto-info-list-item.text-color-secondary div a {
     width: 130px!important;
 }
 .product-summary-wrap .product_meta {
-    margin: 0 0 0 0;
+    margin: 0 0 0 0!important;
 }
 
