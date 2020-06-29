@@ -324,11 +324,10 @@ function woocommerce_my_new_title(){
 
     <div class="phone-product"><span class="phone-product-w">Телефон: </span><span><a href="tel:+79261701333"><i class="fa fa-phone" aria-hidden="true"></i>+7(926)-170-13-33</a></span></div>
     <div class="phone-product"><span class="phone-product-w">E-Mail: </span><span><a href="mailto:connect@jetcamp.ru"><i class="fa fa-envelope" aria-hidden="true"></i>connect@jetcamp.ru</a></span></div>
-    <span/><a href="https://t.me/JetskiCamp"><i class="fa fa-telegram" aria-hidden="true"></i></a></span>
+    <span/><a href="https://t.me/JetskiCamp"><i class="fab fa-telegram-plane"></i></a></span>
 
 
 
-<i class="fa fa-telegram" aria-hidden="true"></i>
 
 
 
