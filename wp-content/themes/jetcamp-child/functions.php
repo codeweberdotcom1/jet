@@ -391,10 +391,7 @@ function add_custom_product_text() {
 
     if( empty($custom_text) ) return;
 
-    echo '<div class="product-extra-text" style="margin-top:30px;">';
-
-    echo '<h3>' . __( 'Product extras', 'woocommerce' ) . '</h3>';
-
+    echo '<div class="product-extra-text" style="margin-top:0px;">';
     // Updated to apply the_content filter to WYSIWYG content
     echo apply_filters( 'the_content', $custom_text );
 
