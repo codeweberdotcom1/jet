@@ -318,15 +318,85 @@ add_filter('woocs_raw_woocommerce_price', function($price) {
     }
 });
 
-add_filter( 'woocommerce_short_description', 'add_text_after_excerpt_single_product', 20, 1 );
-function add_text_after_excerpt_single_product( $post_excerpt ){
-    if ( ! $short_description )
-        return;
+## ---- 1. Backend ---- ##
 
-    // Your custom text
-    $post_excerpt .= '<ul class="fancy-bullet-points red">
-    <li>Current Delivery Times: Pink Equine - 4 - 6 Weeks, all other products 4 Weeks</li>
-    </ul>';
+// Adding a custom Meta container to admin products pages
+add_action( 'add_meta_boxes', 'create_custom_meta_box' );
+if ( ! function_exists( 'create_custom_meta_box' ) )
+{
+    function create_custom_meta_box()
+    {
+        add_meta_box(
+            'custom_product_meta_box',
+            __( 'Additional Product text <em>(optional)</em>', 'woocommerce' ),
+            'add_custom_product_content_meta_box',
+            'product',
+            'normal',
+            'default'
+        );
+    }
+}
 
-    return $post_excerpt;
+//  Custom metabox content in admin product pages
+if ( ! function_exists( 'add_custom_product_content_meta_box' ) ){
+    function add_custom_product_content_meta_box( $post ){
+        $text_area = get_post_meta($post->ID, '_custom_text', true) ? get_post_meta($post->ID, '_custom_text', true) : '';
+        $args['textarea_rows'] = 6;
+
+        echo '<p>'.__( 'Custom text label', 'woocommerce' ).'</p>';
+
+        wp_editor( $text_area, 'custom_text', $args );
+
+        echo '<input type="hidden" name="custom_text_field_nonce" value="' . wp_create_nonce() . '">';
+    }
+}
+
+//Save the data of the Meta field
+add_action( 'save_post', 'save_custom_product_content_meta_box', 20, 3 );
+if ( ! function_exists( 'save_custom_product_content_meta_box' ) ){
+    function save_custom_product_content_meta_box( $post_id, $post, $update  ) {
+
+        if ( $post->post_type != 'product') return; // Only products
+
+        // Check if our nonce is set.
+        if ( ! isset( $_POST[ 'custom_text_field_nonce' ] ) )
+            return $post_id;
+
+        //Verify that the nonce is valid.
+        if ( ! wp_verify_nonce( $_POST[ 'custom_text_field_nonce' ] ) )
+            return $post_id;
+
+        // If this is an autosave, our form has not been submitted, so we don't want to do anything.
+        if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE )
+            return $post_id;
+
+        // Check the user's permissions.
+        if ( ! current_user_can( 'edit_product', $post_id ) )
+            return $post_id;
+
+        // Sanitize user input and update the meta field in the database.
+        if ( isset( $_POST[ 'custom_text' ] ) )
+            update_post_meta( $post_id, $prefix.'_custom_text', wp_kses_post($_POST[ 'custom_text' ]) );
+    }
+}
+
+## ---- 2. Frontend ---- ##
+
+// Add custom text under single product meta
+add_action( 'woocommerce_single_product_summary', 'add_custom_product_text', 70 );
+function add_custom_product_text() {
+    global $product;
+
+    $custom_text = get_post_meta( $product->get_id(), '_custom_text', true );
+
+    if( empty($custom_text) ) return;
+
+    echo '<div class="product-extra-text" style="margin-top:30px;">';
+
+    echo '<h3>' . __( 'Product extras', 'woocommerce' ) . '</h3>';
+
+    // Updated to apply the_content filter to WYSIWYG content
+    echo apply_filters( 'the_content', $custom_text );
+
+    echo '</div>';
 }
