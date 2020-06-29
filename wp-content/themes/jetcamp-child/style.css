@@ -487,13 +487,14 @@ ul.sub-menu {
 .vc_row.wpb_row.porto-flex-column-reverse .porto-wrap-container .row{
         flex-direction: column-reverse!important;
     }
-    
+    .product-thumbs-slider.owl-carousel .img-thumbnail img {
+    max-height: 75px!important;
 }
-@media (max-width: 768px) {
-.vc_row.wpb_row.porto-flex-column-reverse{
+  .vc_row.wpb_row.porto-flex-column-reverse{
         flex-direction: column-reverse!important;
-    }
+    }  
 }
+
 
 section.toggle * {
     font-size: 14px!important;
