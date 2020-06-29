@@ -487,6 +487,9 @@ ul.sub-menu {
 .vc_row.wpb_row.porto-flex-column-reverse .porto-wrap-container .row{
         flex-direction: column-reverse!important;
     }
+    .vc_row.wpb_row.vc_inner.row.mx-0.mb-4.vc_custom_1593390145392.vc_row-has-fill.appear-animation.fadeInUp.appear-animation-visible {
+    flex-direction: column-reverse;
+}
 }
 @media (max-width: 768px) {
 .vc_row.wpb_row.porto-flex-column-reverse{
