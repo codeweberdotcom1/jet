@@ -318,3 +318,15 @@ add_filter('woocs_raw_woocommerce_price', function($price) {
     }
 });
 
+add_filter( 'woocommerce_short_description', 'add_text_after_excerpt_single_product', 20, 1 );
+function add_text_after_excerpt_single_product( $post_excerpt ){
+    if ( ! $short_description )
+        return;
+
+    // Your custom text
+    $post_excerpt .= '<ul class="fancy-bullet-points red">
+    <li>Current Delivery Times: Pink Equine - 4 - 6 Weeks, all other products 4 Weeks</li>
+    </ul>';
+
+    return $post_excerpt;
+}
