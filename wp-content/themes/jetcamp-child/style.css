@@ -531,4 +531,7 @@ li.porto-info-list-item.text-color-secondary div a {
 .cart_item .product-total {
     width: 130px!important;
 }
+.product-summary-wrap .product_meta {
+    margin: 1.2143em 0 0 0;
+}
 
