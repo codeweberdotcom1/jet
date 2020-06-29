@@ -535,5 +535,5 @@ li.porto-info-list-item.text-color-secondary div a {
     width: 130px!important;
 }
 .first-porto-image {
-    min-height: 200px;
+    min-height: 200px!important;
 }
