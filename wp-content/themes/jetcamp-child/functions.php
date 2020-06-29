@@ -318,13 +318,3 @@ add_filter('woocs_raw_woocommerce_price', function($price) {
     }
 });
 
-/**
- * Add a custom text input field to the product page
- */
-function plugin_republic_add_text_field() { ?>
- <div class="pr-field-wrap">
- <label for="pr-field"><?php _e( 'Your name', 'plugin-republic' ); ?></label>
- <input type="text" name='pr-field' id='pr-field' value=''>
- </div>
-<?php }
-add_action( 'woocommerce_before_add_to_cart_button', 'plugin_republic_add_text_field' );
