@@ -383,7 +383,7 @@ if ( ! function_exists( 'save_custom_product_content_meta_box' ) ){
 ## ---- 2. Frontend ---- ##
 
 // Add custom text under single product meta
-add_action( 'woocommerce_single_product_summary', 'add_custom_product_text', 70 );
+add_action( 'woocommerce_single_product_summary', 'add_custom_product_text', 10 );
 function add_custom_product_text() {
     global $product;
 
