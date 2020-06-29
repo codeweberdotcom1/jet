@@ -531,3 +531,6 @@ li.porto-info-list-item.text-color-secondary div a {
 .cart_item .product-total {
     width: 130px!important;
 }
+.first-porto-image {
+    min-height: 200px;
+}
