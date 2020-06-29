@@ -323,7 +323,7 @@ function woocommerce_my_new_title(){
     echo '<div class="product_meta mt-1 mb-4">
 
     <div class="phone-product">Телефон: </span><span><span><a href="tel:+79261701333"><i class="fa fa-phone" aria-hidden="true"></i>+7(926)-170-13-33</a></div>
-    <div class="phone-product">E-Mail: </span><span><span><a href="tel:+79261701333"><i class="fa fa-envelope" aria-hidden="true"></i>connect@jetcamp.ru</a></div>
+    <div class="phone-product">E-Mail: </span><span><span><a href="mailto:connect@jetcamp.ru"><i class="fa fa-envelope" aria-hidden="true"></i>connect@jetcamp.ru</a></div>
 
 
 
