@@ -320,5 +320,5 @@ add_filter('woocs_raw_woocommerce_price', function($price) {
 
 add_action( 'woocommerce_single_product_summary', 'woocommerce_my_new_title', 30 );
 function woocommerce_my_new_title(){
-    echo '<span>Телефон:</span><span><span><a href="tel:+79261701333"><i class="fa fa-phone" aria-hidden="true"></i>+7(926)-170-13-33</a></span>';
+    echo '<div class="product_meta"><span>Телефон:</span><span><span><a href="tel:+79261701333"><i class="fa fa-phone" aria-hidden="true"></i>+7(926)-170-13-33</a></span></div>';
 }
