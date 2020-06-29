@@ -318,3 +318,11 @@ add_filter('woocs_raw_woocommerce_price', function($price) {
     }
 });
 
+add_action( 'woocommerce_single_product_summary', 'woocommerce_my_new_title', 30 );
+function woocommerce_my_new_title(){
+    echo '<span class="sku_wrapper">Телефон: <span class="sku"><aside id="follow-us-widget-3" class="widget follow-us follow-us-zw d-flex align-items-center my-3">
+<div class="share-links"><a class="share-telegram" title="" href="https://t.me/JetskiCamp" target="_blank" rel="nofollow noopener noreferrer" data-toggle="tooltip" data-placement="bottom" data-original-title="Telegram">Telegram</a>
+<a class="share-whatsapp" style="display: none;" title="" href="https://api.whatsapp.com/send?phone=79261701333" target="_blank" rel="nofollow noopener noreferrer" data-toggle="tooltip" data-placement="bottom" data-original-title="WhatsApp">WhatsApp</a></div>
+<div class="d-flex text_phone pl-2"><i class="Simple-Line-Icons-phone pr-2"></i><a href="tel:+79261701333">+7(926)-170-13-33</a></div>
+</aside></span></span>';
+}
