@@ -341,7 +341,7 @@ function ggstyle_menu_item_count( $output, $item, $depth, $args ) {
 
     return $output;
 }
-add_action( 'wp_nav_menu', 'ggstyle_menu_item_count', 10, 4 );
+add_action( 'walker_nav_menu_start_el', 'ggstyle_menu_item_count', 10, 4 );
 function ggstyle_menu_item_count( $output, $item, $depth, $args ) {
     // Check if the item is a Category or Custom Taxonomy
     if( $item->type == 'taxonomy' ) {
@@ -358,4 +358,4 @@ function ggstyle_menu_item_count( $output, $item, $depth, $args ) {
 
     return $output;
 }
-add_action( 'wp_nav_menu', 'ggstyle_menu_item_count', 10, 4 );
+add_action( 'walker_nav_menu_start_el', 'ggstyle_menu_item_count', 10, 4 );
