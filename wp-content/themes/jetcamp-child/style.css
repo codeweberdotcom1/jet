@@ -544,5 +544,5 @@ span.ml-2.menu-item-count {
     color: #dedede!important;
 }
 .sidebar-menu > li.menu-item>.arrow {
-    right: 15px;
+    right: 15px!important;
 }
