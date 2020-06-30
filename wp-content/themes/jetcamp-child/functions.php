@@ -350,6 +350,19 @@ function ggstyle_menu_item_count( $output, $item, $depth, $args ) {
 }
 add_action( 'walker_nav_menu_start_el', 'ggstyle_menu_item_count', 10, 4 );
 
+
+
+
+// WC 2.6.4: Добавить маску ввода на базе http://digitalbush.com/projects/masked-input-plugin
+add_action('wp_enqueue_scripts', 'my_maskedinput');
+function my_maskedinput() {
+    // подгружаем скрипты только на страницы оформления заказа
+    if (is_checkout()) {
+        // загружаем скрипт, который находиться в ПапкаТемы\assets\js\jquery.maskedinput.min.js
+        wp_enqueue_script('maskedinput', get_template_directory_uri() . '/jquery.maskedinput.min.js', array('jquery'));
+        add_action( 'wp_footer', 'masked_script', 999);
+    }
+}
 function masked_script() {
     if ( wp_script_is( 'jquery', 'done' ) ) {
         ?>
