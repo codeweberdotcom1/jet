@@ -52,14 +52,7 @@ h2.sub-title.thumb-info-inner {
     font-size: 13px;
 }
 
-.phone-product {
-    display: flex;
-    width: 200px;
-    justify-content: space-between;
-}
-span.ml-2.menu-item-count {
-    color: #bdbdbd;
-}
+
 
 
 
@@ -538,4 +531,15 @@ li.porto-info-list-item.text-color-secondary div a {
 .cart_item .product-total {
     width: 130px!important;
 }
+.phone-product {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+}
+span.ml-2.menu-item-count {
+    color: #bdbdbd;
+}
 
+.menu-item-count {
+    color: #d6d6d6;
+}
