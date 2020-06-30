@@ -17,7 +17,9 @@ Tags: woocommerce, corporate, ecommerce, responsive, blue, black, green, white, 
     padding: 1px 0 1px 0!important;
 }
 
-
+span.ml-2.menu-item-count {
+    color: #000!important;
+}
 
 #header.sticky-header .main-menu > li.menu-item > a, #header.sticky-header .menu-custom-block span, #header.sticky-header .menu-custom-block a, #header.sticky-header .main-menu-wrap .main-menu .menu-custom-block a, #header.sticky-header .main-menu-wrap .main-menu .menu-custom-block span {
     padding-bottom: 1px!important;
@@ -540,6 +542,3 @@ li.porto-info-list-item.text-color-secondary div a {
 }
 
 
-span.ml-2.menu-item-count {
-    color: #000!important;
-}
