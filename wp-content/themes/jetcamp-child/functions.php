@@ -75,13 +75,7 @@ function enable_gallery_for_multiple_thumbnails_only() {
     }
 }
 
-//убираем количество в категориях
-add_filter('woocommerce_subcategory_count_html','remove_count');
 
-function remove_count(){
- $html='';
- return $html;
-}
 
 /** Hide Download Tab Admin menu */
 add_filter( 'woocommerce_account_menu_items', 'custom_remove_downloads_my_account', 999 );
