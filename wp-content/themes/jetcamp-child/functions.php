@@ -350,31 +350,3 @@ function ggstyle_menu_item_count( $output, $item, $depth, $args ) {
 }
 add_action( 'walker_nav_menu_start_el', 'ggstyle_menu_item_count', 10, 4 );
 
-add_action( 'woocommerce_product_options_general_product_data', 'add_the_sku_to_general_product_field' );
-function add_the_sku_to_general_product_field() {
-    global $post;
-
-    $product_sku = get_post_meta( $post->ID, '_sku', true );
-
-    echo '<div class="options_group">';
-
-    woocommerce_wp_text_input( array(
-        'id'                => '_sku',
-        'label'             => __( 'SKU', 'woocommerce' ),
-        'placeholder'       => '',
-        'description'       => __( 'Enter the SKU', 'woocommerce' )
-    ) );
-
-    echo '</div>';
-
-}
-
-// Saving the Custom Admin Field in general tab products pages when submitted
-add_action( 'woocommerce_process_product_meta', 'save_the_sku_to_general_product_field' );
-function save_the_sku_to_general_product_field( $post_id ){
-
-    $wc_field = $_POST['_sku'];
-
-    if( !empty($wc_field))
-        update_post_meta( $post_id, '_sku', esc_attr( $wc_field ) );
-}
