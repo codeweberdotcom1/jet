@@ -540,7 +540,6 @@ li.porto-info-list-item.text-color-secondary div a {
 }
 
 
-
-.menu-item-count {
-    color: #000000!important;
+span.ml-2.menu-item-count {
+    color: #000!important;
 }
