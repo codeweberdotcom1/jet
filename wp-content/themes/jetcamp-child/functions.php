@@ -350,3 +350,14 @@ function ggstyle_menu_item_count( $output, $item, $depth, $args ) {
 }
 add_action( 'walker_nav_menu_start_el', 'ggstyle_menu_item_count', 10, 4 );
 
+function masked_script() {
+    if ( wp_script_is( 'jquery', 'done' ) ) {
+        ?>
+        <script type="text/javascript">
+            jQuery( function( $ ) {
+                $("#billing_phone").mask("+7(___)___-__-__");
+            });
+        </script>
+        <?php
+    }
+}
