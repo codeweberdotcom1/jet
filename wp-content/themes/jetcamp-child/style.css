@@ -537,8 +537,8 @@ li.porto-info-list-item.text-color-secondary div a {
 }
 
 .single-product .product_meta {
-    border: 1px solid #e4e4e4;
-    padding: 20px;
+    border: 1px solid #e4e4e4!important;
+    padding: 20px!important;
 }
 
 .woo-variation-swatches .variable-items-wrapper .variable-item:not(.radio-variable-item).selected {
