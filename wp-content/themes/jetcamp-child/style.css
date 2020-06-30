@@ -538,5 +538,9 @@ li.porto-info-list-item.text-color-secondary div a {
 
 
 .woo-variation-swatches .variable-items-wrapper .variable-item:not(.radio-variable-item).selected {
-    box-shadow: 0 0 0 2px #0088cc !important;
+    box-shadow: 0 0 0 2px #0088cc!important;
+}
+
+ul.products li.product-category:hover .thumb-info-wrapper:after {
+    background: rgba(41, 105, 178, 0.53)!important;;
 }
