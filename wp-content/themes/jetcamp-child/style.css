@@ -538,10 +538,9 @@ li.porto-info-list-item.text-color-secondary div a {
     width: 200px;
     justify-content: space-between;
 }
-span.ml-2.menu-item-count {
-    color: #bdbdbd;
-}
+
+
 
 .menu-item-count {
-    color: #dedede!important;
+    color: #000000!important;
 }
