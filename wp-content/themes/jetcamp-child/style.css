@@ -57,9 +57,6 @@ h2.sub-title.thumb-info-inner {
 }
 
 
-
-
-
 span.product-stock.in-stock span {
     color: green!important;
 }
@@ -391,11 +388,11 @@ span.aws_result_title {
 .product-image .labels .onsale, .summary-before .labels .onsale {
     background: #ef0000;
 }
-}
+
 .product-image .labels .onhot, .product-image .labels .onsale {
     padding: 11px 11px;
 }
-}
+
 .product-image .labels {
     font-size: 13px;
 }
