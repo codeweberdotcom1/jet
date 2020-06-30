@@ -463,9 +463,7 @@ ul.sub-menu {
 .woo-variation-swatches.wvs-style-squared .variable-items-wrapper .variable-item {
     border-radius: 0;
 }
-.woo-variation-swatches .variable-items-wrapper .variable-item:not(.radio-variable-item).selected {
-    box-shadow: 0 0 0 2px #0088cc !important;
-}
+
 .cart-v2 h1 {
     font-size: 25px!important;
     line-height: 30px!important;
@@ -541,4 +539,8 @@ li.porto-info-list-item.text-color-secondary div a {
 .single-product .product_meta {
     border: 1px solid #e4e4e4;
     padding: 20px;
+}
+
+.woo-variation-swatches .variable-items-wrapper .variable-item:not(.radio-variable-item).selected {
+    box-shadow: 0 0 0 2px #0088cc !important;
 }
