@@ -542,5 +542,5 @@ li.porto-info-list-item.text-color-secondary div a {
 }
 
 .product-image .labels .onsale, .summary-before .labels .onsale {
-    line-height: 15px;
+    line-height: 15px!important;
 }
