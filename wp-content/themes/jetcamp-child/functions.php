@@ -341,7 +341,7 @@ function ggstyle_menu_item_count( $output, $item, $depth, $args ) {
         if($object->count > 0) {
             $output_new = '';
             $output_split = str_split($output, strpos($output, '</a>') );
-            $output_new .= $output_split[0] . "<span class='menu-item-count'>" . " (" . $object->count."</span>" . ")" . $output_split[1];
+            $output_new .= $output_split[0] . "<span class='menu-item-count'>" . " (" . $object->count . ")" . "</span>" . $output_split[1];
             $output = $output_new;
         }
     }    
