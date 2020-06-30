@@ -329,16 +329,3 @@ function woocommerce_my_new_title(){
     </div>';
 }
 
-function ggstyle_menu_item_count( $output, $item, $depth, $args ) {
-    // Check if the item is a Category or Custom Taxonomy
-    if( $item->type == 'taxonomy' ) {
-        $object = get_term($item->object_id, $item->object);
-
-        // Check count, if more than 0 display count
-        if($object->count > 0)
-            $output .= "<span class='menu-item-count'>".$object->count."</span>";
-    }    
-
-    return $output;
-}
-add_action( 'walker_nav_menu_start_el', 'ggstyle_menu_item_count', 10, 4 );
