@@ -541,4 +541,8 @@ li.porto-info-list-item.text-color-secondary div a {
     box-shadow: 0 0 0 2px #0088cc!important;
 }
 
-
+.our-offices .porto-wrap-container {
+    border: 2px solid #555;
+    border-radius: 20px;
+    padding: 10px;
+}
