@@ -17,6 +17,10 @@ tags: woocommerce, corporate, ecommerce, responsive, blue, black, green, white, 
     padding: 1px 0 1px 0!important;
 }
 
+.woocommerce-page .sidebar-content .widget-title {
+    font-size: 16px!important;
+    text-transform: capitalize;
+}
 .mr-6 {
     margin-right: 80px;
 }
