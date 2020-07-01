@@ -1,17 +1,17 @@
 /*
-Theme Name: jetcamp child
-Theme URI: https://www.portotheme.com/wordpress/porto
-Author: P-THEMES
-Author URI: https://www.portotheme.com/
-Description: Porto Responsive WordPress + eCommerce Theme.
-Version: 1.1
-Template: porto
-License: Commercial
-License URI: http://themeforest.net/licenses/regular_extended
-Tags: woocommerce, corporate, ecommerce, responsive, blue, black, green, white, light, dark, red, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
+theme name: jetcamp child
+theme uri: https://www.portotheme.com/wordpress/porto
+author: p-themes
+author uri: https://www.portotheme.com/
+description: porto responsive wordpress + ecommerce theme.
+version: 1.1
+template: porto
+license: commercial
+license uri: http://themeforest.net/licenses/regular_extended
+tags: woocommerce, corporate, ecommerce, responsive, blue, black, green, white, light, dark, red, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
 */
 
-/*************** ADD YOUR CUSTOM CSS HERE  ***************/
+/*************** add your custom css here  ***************/
 #header .main-menu > li.menu-item > a {
     font-weight: 600;
     padding: 1px 0 1px 0!important;
@@ -23,14 +23,14 @@ span.ml-2.menu-item-count {
 
 #header.sticky-header .main-menu > li.menu-item > a, #header.sticky-header .menu-custom-block span, #header.sticky-header .menu-custom-block a, #header.sticky-header .main-menu-wrap .main-menu .menu-custom-block a, #header.sticky-header .main-menu-wrap .main-menu .menu-custom-block span {
     padding-bottom: 1px!important;
-}	
+}   
 
 .yith-wcwl-wishlistexistsbrowse {
-    font-family: Open Sans,sans-serif;
+    font-family: open sans,sans-serif;
 }
 
 #mini-cart .buttons a, .quantity .qty, .single_add_to_cart_button, .shop_table.wishlist_table .add_to_cart.button, .woocommerce table.wishlist_table .add_to_cart.button, ul.products li.product-col .add_to_cart_button, ul.products li.product-col .add_to_cart_read_more, ul.products li.product-col .quickview, .single-product .product-summary-wrap .price, .single-product .yith-wcwl-add-to-wishlist {
-    font-family: Open Sans,sans-serif;
+    font-family: open sans,sans-serif;
 }
 td.product-add-to-cart {
     display: flex;
@@ -172,13 +172,13 @@ input[type="reset"] {
 .wpf_reset_btn:before {
     color: #fff;
     font-weight: 600;
-        left: 10px;
+    left: 10px;
     border: 1px solid #fff;
 }
 .wpf_reset_btn:after {
     color: #fff;
     font-weight: 600;
-        left: 10px;
+    left: 10px;
     border: 1px solid #fff;
 }
 .lead {
@@ -194,7 +194,7 @@ input[type="reset"] {
 p {
     color: #000;
 }
-span.woocommerce-Price-currencySymbol {
+span.woocommerce-price-currencysymbol {
     padding-right: 5px;
 }
 form.checkout.woocommerce-checkout * h3 {
@@ -213,7 +213,7 @@ button#place_order:hover {
     border-color: #ff671b;
 }
 .wc-proceed-to-checkout a {
-	background: #2b6bb3;
+    background: #2b6bb3;
     padding: 0.8rem 1.9rem;
     border-color: #2b6bb3;
     font-weight: 600;
@@ -226,7 +226,7 @@ button#place_order:hover {
 }
 
 .cart-actions a {
-	background: #ff671b!important;
+    background: #ff671b!important;
     padding: 0.8rem 1.9rem;
     border-color: #ff671b!important;
     color: #fff!important;
@@ -240,7 +240,7 @@ button#place_order:hover {
 }
 
 .cart-actions button {
-	background: #ff671b!important;
+    background: #ff671b!important;
     padding: 0.8rem 1.9rem;
     border-color: #ff671b!important;
     color: #fff!important;
@@ -263,20 +263,20 @@ button#place_order:hover {
 }
 .cart-v2 h1 a:hover {
    background: #ff671b!important;
-    border-color: #ff671b!important;
+   border-color: #ff671b!important;
 }
 
 @media (max-width: 414px) {
-.cart-actions a, .cart-actions button {
-width: 100%;
-margin-bottom: 3px;
-}
+    .cart-actions a, .cart-actions button {
+        width: 100%;
+        margin-bottom: 3px;
+    }
 }
 @media (min-width: 1024px) {
-.cart-v2 h1 a {
-    display: none
+    .cart-v2 h1 a {
+        display: none
 
-}
+    }
 }
 
 
@@ -315,31 +315,8 @@ span.aws_result_title {
     flex-direction: row;
     flex-wrap: wrap;
 }
-@media only screen and (min-width: 1200px)
-.left_column, .right_column {
-    width: 33.3%;
-    flex-wrap: wrap;
-}
-@media only screen and (min-width: 992px)
-.left_column, .right_column {
-    width: 33.3%;
-    flex-wrap: wrap;
-}
-@media only screen and (min-width: 768px)
-.left_column, .right_column {
-    width: 33.3%;
-    flex-wrap: wrap;
-}
-@media only screen and (min-width: 480px)
-.left_column, .right_column {
-    width: 100%;
-    flex-wrap: wrap;
-}
-@media only screen and (min-width: 320px)
-.left_column, .right_column {
-    width: 100%;
-    flex-wrap: wrap;
-}
+
+
 
 .left_column, .right_column {
     width: 33.3%;
@@ -483,10 +460,10 @@ ul.sub-menu {
 }
 
 @media (max-width: 768px) {
-.vc_row.wpb_row.porto-flex-column-reverse .porto-wrap-container .row{
+    .vc_row.wpb_row.porto-flex-column-reverse .porto-wrap-container .row{
         flex-direction: column-reverse!important;
     }
-  .vc_row.wpb_row.porto-flex-column-reverse{
+    .vc_row.wpb_row.porto-flex-column-reverse{
         flex-direction: column-reverse!important;
     }  
 }
@@ -552,4 +529,40 @@ li.porto-info-list-item.text-color-secondary div a {
 }
 .mobile-sidebar .sidebar-toggle {
     top: 40%!important;
+}
+
+@media only screen and (min-width: 1200px) {
+
+
+.left_column, .right_column {
+    width: 33.3%;
+    flex-wrap: wrap;
+}
+}
+@media only screen and (min-width: 992px) {
+  .left_column, .right_column {
+    width: 33.3%;
+    flex-wrap: wrap;
+}  
+}
+
+@media only screen and (min-width: 768px) {
+   .left_column, .right_column {
+    width: 33.3%;
+    flex-wrap: wrap;
+} 
+}
+
+@media only screen and (min-width: 480px) {
+    .left_column, .right_column {
+    width: 100%;
+    flex-wrap: wrap;
+}
+}
+
+@media only screen and (min-width: 320px) {
+   .left_column, .right_column {
+    width: 100%;
+    flex-wrap: wrap;
+} 
 }
