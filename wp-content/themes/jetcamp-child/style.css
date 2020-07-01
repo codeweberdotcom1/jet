@@ -566,3 +566,9 @@ li.porto-info-list-item.text-color-secondary div a {
     flex-wrap: wrap;
 } 
 }
+.mr-6 {
+    margin-right: 80px;
+}
+.ml-6 {
+    margin-left: 80px;
+}
