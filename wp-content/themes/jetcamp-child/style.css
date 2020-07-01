@@ -17,6 +17,13 @@ tags: woocommerce, corporate, ecommerce, responsive, blue, black, green, white, 
     padding: 1px 0 1px 0!important;
 }
 
+.mr-6 {
+    margin-right: 80px;
+}
+.ml-6 {
+    margin-left: 80px;
+}
+
 span.ml-2.menu-item-count {
     color: #000!important;
 }
@@ -200,12 +207,7 @@ span.woocommerce-price-currencysymbol {
 form.checkout.woocommerce-checkout * h3 {
     font-size: 18px;
 }
-.mr-6 {
-    margin-right: 80px;
-}
-.ml-6 {
-    margin-left: 80px;
-}
+
 
 button#place_order {
     background: #2b6bb3;
