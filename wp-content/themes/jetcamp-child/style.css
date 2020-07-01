@@ -546,3 +546,7 @@ li.porto-info-list-item.text-color-secondary div a {
     border-radius: 20px;
     padding: 10px;
 }
+.sidebar-toggle {
+    background: #2969b2!important;
+    color: #fff!important;
+}
