@@ -540,6 +540,9 @@ li.porto-info-list-item.text-color-secondary div a {
     width: 33.3%;
     flex-wrap: wrap;
 }  
+.d-block-lg {
+    display: block;
+}
 }
 
 @media only screen and (min-width: 768px) {
