@@ -17,6 +17,8 @@ tags: woocommerce, corporate, ecommerce, responsive, blue, black, green, white, 
     padding: 1px 0 1px 0!important;
 }
 
+
+
 .woocommerce-page .sidebar-content .widget-title {
     font-size: 16px!important;
     text-transform: capitalize;
@@ -480,7 +482,7 @@ section.toggle * {
     font-size: 14px!important;
 }
 
-.button-80 .vc_btn3.vc_btn3-shape-square {
+.button-80 .vc_btn3.vc_btn3-shape-round {
     width: 90%;
     text-align: center;
     margin-left: 10px;
