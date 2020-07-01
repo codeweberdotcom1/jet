@@ -550,3 +550,6 @@ li.porto-info-list-item.text-color-secondary div a {
     background: #2969b2!important;
     color: #fff!important;
 }
+.mobile-sidebar .sidebar-toggle {
+    top: 40%!important;
+}
