@@ -482,13 +482,9 @@ section.toggle * {
     font-size: 14px!important;
 }
 
-.button-80 .vc_btn3.vc_btn3-shape-round {
-    width: 90%;
-    text-align: center;
-    margin-left: 10px;
-    margin-right: 10px;
-    text-transform: capitalize;
-}
+
+
+
 .btn-modern {
     text-transform: capitalize!important;
     font-weight: 400!important;
