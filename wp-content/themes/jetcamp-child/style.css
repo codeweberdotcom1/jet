@@ -37,13 +37,21 @@ tags: woocommerce, corporate, ecommerce, responsive, blue, black, green, white, 
     font-family: open sans,sans-serif;
 }
 td.product-add-to-cart {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
 }
 
 ul.products .category-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 a.viewcart-style-2.button.product_type_simple.add_to_cart_read_more {
@@ -85,7 +93,9 @@ li.product-outimage_aq_onimage .add-links .quickview {
 }
 
 .porto-sicon-box.footer-logo.style_1.default-icon {
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
 }
 
 .porto-sicon-box.footer-logo.style_1.default-icon .porto-sicon-header {
@@ -129,6 +139,8 @@ a.share-whatsapp {
 }
 
 .porto-sicon-box.address-new.style_1.default-icon.flex-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .porto-sicon-box.address-new.style_1.default-icon.flex-wrap .porto-sicon-description {
@@ -315,35 +327,62 @@ span.aws_result_title {
     color: #fe6c23;
 }
 .justify {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 
 
 .left_column, .right_column {
     width: 33.3%;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 .dialog {
     max-width: 1100px;
 }
 .justify3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     vertical-align: central;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .justify2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: left;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     height: auto;
 }
 
@@ -387,8 +426,12 @@ span.aws_result_title {
 }
 
 .product-image .labels .onsale, .summary-before .labels .onsale {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     line-height: 10px;
 }
@@ -452,6 +495,8 @@ ul.sub-menu {
     color: black;
 }
 #follow-us-widget-3 .share-links {
+    display: -webkit-box!important;
+    display: -ms-flexbox!important;
     display: flex!important;
 }
 #mini-cart .buttons .checkout {
@@ -461,10 +506,16 @@ ul.sub-menu {
 
 @media (max-width: 768px) {
     .vc_row.wpb_row.porto-flex-column-reverse .porto-wrap-container .row{
-        flex-direction: column-reverse!important;
+        -webkit-box-orient: vertical!important;
+        -webkit-box-direction: reverse!important;
+            -ms-flex-direction: column-reverse!important;
+                flex-direction: column-reverse!important;
     }
     .vc_row.wpb_row.porto-flex-column-reverse{
-        flex-direction: column-reverse!important;
+        -webkit-box-orient: vertical!important;
+        -webkit-box-direction: reverse!important;
+            -ms-flex-direction: column-reverse!important;
+                flex-direction: column-reverse!important;
     }  
 }
 
@@ -484,13 +535,24 @@ section.toggle * {
 }
 
 .club-jc .wpb_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .club-jc {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     min-height: 350px;
 }
 .text-jc div ul li {
@@ -505,14 +567,19 @@ li.porto-info-list-item.text-color-secondary div a {
     width: 130px!important;
 }
 .phone-product {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 200px;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 
 .woo-variation-swatches .variable-items-wrapper .variable-item:not(.radio-variable-item).selected {
-    box-shadow: 0 0 0 2px #0088cc!important;
+    -webkit-box-shadow: 0 0 0 2px #0088cc!important;
+            box-shadow: 0 0 0 2px #0088cc!important;
 }
 
 .our-offices .porto-wrap-container {
@@ -533,13 +600,15 @@ li.porto-info-list-item.text-color-secondary div a {
 
 .left_column, .right_column {
     width: 33.3%;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 }
 @media only screen and (min-width: 992px) {
   .left_column, .right_column {
     width: 33.3%;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }  
 .d-block-lg {
     display: block;
@@ -549,21 +618,23 @@ li.porto-info-list-item.text-color-secondary div a {
 @media only screen and (min-width: 768px) {
    .left_column, .right_column {
     width: 33.3%;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 } 
 }
 
 @media only screen and (min-width: 480px) {
     .left_column, .right_column {
     width: 100%;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 }
 
 @media only screen and (min-width: 320px) {
    .left_column, .right_column {
     width: 100%;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 } 
 }
-
