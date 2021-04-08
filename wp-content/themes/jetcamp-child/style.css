@@ -11,11 +11,14 @@ license uri: http://themeforest.net/licenses/regular_extended
 tags: woocommerce, corporate, ecommerce, responsive, blue, black, green, white, light, dark, red, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
 */
 
+
 /*************** add your custom css here  ***************/
 #header .main-menu > li.menu-item > a {
     font-weight: 600;
     padding: 1px 0 1px 0!important;
+
 }
+
 
 
 
